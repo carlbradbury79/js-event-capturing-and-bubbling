@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Propagation, Capture, Bubbling & Once</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Event Capture, Propogation, Bubbling and Once</h1>
+    <p>A simple tool to show the output of different options when dealing with selecting nested html items</p>
+    <p>Open the console to see the output when the different coloured divs are selected</p>
+    <main>
+        <div>
+            <form action="">
+                <label for="eProp">e.stopPropagation</label>
+                <input type="checkbox" name="" id="eProp" class="checkboxes">
+                <br />
+                <label for="capt">Capture</label>
+                <input type="checkbox" name="" id="capt" class="checkboxes">
+                <br />
+                <label for="once">Once</label>
+                <input type="checkbox" name="" id="once" class="checkboxes">
+            </form>
+            <p id="output"></p>
+        </div>
+        <div class="top box">
+            <div class="middle box">
+                <div class="bottom box"></div>
+            </div>
+        </div>
+        
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
